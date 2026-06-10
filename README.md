@@ -87,7 +87,7 @@ Thank you for visiting this repository. Happy coding!
 
 ---
 
-**Author:** Ajay Challa
+**Author:** AjayChalla-Coder
 **Language:** C++
 **Platform:** Codeforces
 **Problems Solved:** 600+
