@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define fastio ios::sync_with_stdio(false); cin.tie(NULL);
+#define ll long long
+
+int main() {
+    fastio
+
+    int t;cin >> t;
+
+    while (t--) {
+        int n; cin >> n;
+        string a; cin >> a;
+
+        int m; cin >> m;
+        string b, c; cin >> b >> c;
+        deque<char> dq;
+        for (char ch : a) dq.push_back(ch);
+        for (int i = 0; i < m; i++) {
+            if (c[i] == 'V') dq.push_front(b[i]);
+            else dq.push_back(b[i]);
+        }
+        for (char ch : dq) cout << ch;
+        cout << '\n';
+    }
+    return 0;
+}

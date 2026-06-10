@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n; string s;
+    cin >> n >> s;
+    deque<char> d;
+    for (int i = 0; i < n; ++i) {
+        if ((n - i) % 2 == 1) d.push_back(s[i]);
+        else d.push_front(s[i]);
+    }
+    for (char c : d) cout << c;
+    return 0;
+}
